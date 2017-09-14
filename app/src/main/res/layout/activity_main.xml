@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.angle.hshb.bezierdemo.MainActivity">
+
+    <com.angle.hshb.bezierdemo.utils.BezierView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <com.angle.hshb.bezierdemo.utils.WaveView
+        android:id="@+id/wave_view"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:visibility="gone" />
+
+    <com.angle.hshb.bezierdemo.adhesion.progress.AdhesionHorizontalLoader
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <com.angle.hshb.bezierdemo.adhesion.progress.AdhesionCircleLoader
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.angle.hshb.bezierdemo.TouchImageView
+            android:id="@+id/iv_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </ScrollView>
+
+</LinearLayout>
